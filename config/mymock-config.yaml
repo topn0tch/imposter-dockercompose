@@ -1,0 +1,4 @@
+plugin: rest
+path: "/terms"
+response:
+  staticFile: terms-data.json

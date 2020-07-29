@@ -1,0 +1,9 @@
+version: '3'
+services:
+ imposter:
+  build: .
+  ports:
+   - "8008:8008"
+  volumes:
+   - "./config:/opt/imposter/config"
+  command: -l 8008 -c "/opt/imposter/config"
